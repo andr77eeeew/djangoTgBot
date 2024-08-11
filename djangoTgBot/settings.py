@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+TOKEN_BOT = env.str('TOKEN_BOT')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'bot',
 ]
 
 MIDDLEWARE = [
